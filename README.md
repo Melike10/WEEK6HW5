@@ -9,7 +9,8 @@ This repository contains SQL queries related to the PostgreSQL database as part 
 SELECT * FROM film
 WHERE title LIKE '%n'
 ORDER BY length DESC
-LIMIT 5; ```
+LIMIT 5;
+ ```
 
 This query selects the top 5 films from the film table where the title ends with 'n', ordered by length in descending order.
 
@@ -20,7 +21,8 @@ SELECT * FROM film
 WHERE title LIKE '%n'
 ORDER BY length ASC
 OFFSET 5
-LIMIT 5;```
+LIMIT 5;
+```
 This query retrieves the 6th to 10th shortest films from the film table where the title ends with 'n', ordered by length in ascending order.
 
 ### 3. Retrieve the top 4 customers from store 1, sorted by last name in descending order
@@ -29,7 +31,8 @@ This query retrieves the 6th to 10th shortest films from the film table where th
 SELECT * FROM customer
 WHERE store_id = 1
 ORDER BY last_name DESC
-LIMIT 4;```
+LIMIT 4;
+```
 
 This query retrieves the top 4 customers from the customer table where the store_id is 1, sorted in descending order by last_name.
 
